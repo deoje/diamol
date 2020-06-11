@@ -28,6 +28,8 @@ services:
     secrets:
       - source: postgres-connection
         target: /app/config/secrets.json
+     networks:
+      - app-net
 
 secrets:
   postgres-connection:
